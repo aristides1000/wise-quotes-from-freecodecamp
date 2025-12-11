@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motivación y Cumplidos Diarios con Local Storage</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>✨ Tu Dosis Diaria de Motivación y Cumplidos ✨</h1>
+
+      <div id="message-box">Cargando su mensaje diario...</div>
+
+      <button id="generate-btn" onclick="getNewMessage()">
+        Generar Nuevo Mensaje
+      </button>
+
+      <p id="timer-info">
+        El mensaje solo se actualizará una vez cada 24 horas.
+      </p>
+    </div>
+
+    <div class="container">
+      <h2>✅ Registro de Citas Motivacionales</h2>
+      <div id="quotes-list"></div>
+      <p class="quote-author" style="margin-top: 15px">
+        **Nota:** El estado de las casillas se guarda automáticamente en tu
+        navegador usando Local Storage.
+      </p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
